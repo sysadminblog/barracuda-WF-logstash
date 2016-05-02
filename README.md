@@ -10,6 +10,8 @@ Add the filter files to your logstash configuration directory, eg. `/etc/logstas
 
 Log into your Barracuda Appliance and go to the Advanced tab and click Syslog. Set up both the Web Interface and Web Traffic syslogs to point to your logstash server.
 
+You must edit the `05-syslog-parse_barracuda.conf` file and set the correct IP address of your web filter.
+
 ## Files
 
 ### 05-syslog-parse_barracuda.conf
